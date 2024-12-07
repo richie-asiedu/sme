@@ -1,0 +1,185 @@
+*{
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: tahoma;
+    background-color: rgba(0, 0, 0, 0.89);
+    background-image: url(IMG1.JPG);
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    background-repeat:no-repeat;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.884);
+    height: 100px;
+    width: 100%;
+}
+label.logo{
+    color: rgb(216, 100, 17);
+    font-size: 35px;
+    line-height: 80px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium';
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: rgb(255, 131, 16);
+    border-radius: 15px;
+    font-size: 17px;
+    padding: 7px 13px;
+}
+a.active,a:hover{
+    background-color: rgb(189, 85, 21);
+}
+.cup{
+    font-size: 40px;
+    line-height: normal;
+    color: rgb(218, 69, 14);
+}
+.checkbtn{
+    float: right;
+    font-size: 35px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.searchbtn{
+    float: right;
+    font-size: 30px;
+    line-height: 80px;
+    margin-inline: normal;
+    margin-right: 30px;
+}
+nav .fa{
+    display: none;
+}
+#search{
+    float: right;
+    line-height: 20px;
+    margin-top: 3%;
+    margin-right: 20px;
+    top: 0;
+    transition: transform 0.1s ease;
+    border-radius: 10x;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 20px;
+        padding-left: -10px;
+        line-height: 70px;
+        margin-right: 20%;
+    }
+    nav{
+        background: black;
+        height: 300%;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    #search{
+        display: inline-block;
+        width: 20%;
+        margin-top: 20px;
+    }
+    nav .fa{
+        display: inline-block;
+    }
+    ul{
+        position: fixed;
+        height: 70vh;
+        text-align: center;
+        top: 60px;
+        left: -100%;
+        transition: all .1s;
+    }
+    nav ul li{
+        display: block;
+         margin: 9px 0;
+         line-height: 15px;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+    #check:checked ~ ul{
+        right: -180%;
+        padding: 0%;
+        margin: 0%;
+    }
+    .icons a:hover{
+        background-color: rgb(44, 40, 40);
+    }
+}
+h1{
+    text-transform: uppercase;
+    color: rgb(230, 72, 14);
+    text-align: center;
+    text-shadow: 2px 2px 1px;
+    margin-top: 25%;
+}
+.text-box{
+    text-align: center;
+    text-transform: uppercase;
+}
+.hero-btn{
+    display: inline-block;
+    border: 2px solid rgb(219, 71, 17);
+    font-size: 13px;
+    padding: 12px 34px;
+    margin-top: 19px;
+    color: rgb(218, 72, 18);
+    cursor: pointer;
+    background: transparent;
+}
+.hero-btn:hover{
+    background: rgb(139, 61, 35);
+}
+.text-box p{
+    margin-top: 20px;
+    text-transform: lowercase;
+    color: rgb(197, 75, 30);
+}
+h4{
+    color: orangered;
+    margin-top: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1.5px 1px 3px;
+    font-family: times;
+    font-weight: bold;
+    font-size: 30px;
+}
+.main p{
+    color: orangered;
+    text-align: center;
+    margin-top: 3%;
+}
+.icons{
+    margin-top: 3%;
+}
+.icons a{
+    padding-inline: 1.5%;
+    font-size: 25px;
+    border-radius: 20%;
+}
+.icons a:hover{
+    background-color: rgb(68, 64, 64);
+}
